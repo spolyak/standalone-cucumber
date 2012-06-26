@@ -7,7 +7,8 @@ Given /^I have entered "([^"]*)" into the "([^"]*)" field$/ do |text, field|
 end
 
 When /^I click the "([^"]*)" button$/ do |button_text|
-  click_button button_text
+ # click_button button_text
+ page.evaluate_script("document.forms[0].submit()")
 end
 
 Then /^I should see "([^"]*)"$/ do |text|

@@ -59,4 +59,5 @@ PLATFORMS
 DEPENDENCIES
   capybara
   cucumber
+  rake (= 0.8.7)
   rspec
